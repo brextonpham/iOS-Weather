@@ -13,6 +13,10 @@
 		D65706FE1B49C94E00F1F925 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65706FD1B49C94E00F1F925 /* Images.xcassets */; };
 		D65707011B49C94E00F1F925 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D65706FF1B49C94E00F1F925 /* LaunchScreen.xib */; };
 		D657070D1B49C94E00F1F925 /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D657070C1B49C94E00F1F925 /* WeatherTests.swift */; };
+		D65707191B49CB1500F1F925 /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = D65707181B49CB1500F1F925 /* CurrentWeather.plist */; };
+		D657071B1B49CBE000F1F925 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D657071A1B49CBE000F1F925 /* CurrentWeather.swift */; };
+		D657071D1B4A160000F1F925 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D657071C1B4A160000F1F925 /* NetworkOperation.swift */; };
+		D657071F1B4A1E2D00F1F925 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D657071E1B4A1E2D00F1F925 /* ForecastService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		D65707061B49C94E00F1F925 /* WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D657070B1B49C94E00F1F925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D657070C1B49C94E00F1F925 /* WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTests.swift; sourceTree = "<group>"; };
+		D65707181B49CB1500F1F925 /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
+		D657071A1B49CBE000F1F925 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		D657071C1B4A160000F1F925 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		D657071E1B4A1E2D00F1F925 /* ForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +87,12 @@
 			children = (
 				D65706F61B49C94E00F1F925 /* AppDelegate.swift */,
 				D65706F81B49C94E00F1F925 /* ViewController.swift */,
+				D657071C1B4A160000F1F925 /* NetworkOperation.swift */,
+				D657071E1B4A1E2D00F1F925 /* ForecastService.swift */,
 				D65706FA1B49C94E00F1F925 /* Main.storyboard */,
 				D65706FD1B49C94E00F1F925 /* Images.xcassets */,
 				D65706FF1B49C94E00F1F925 /* LaunchScreen.xib */,
+				D657071A1B49CBE000F1F925 /* CurrentWeather.swift */,
 				D65706F41B49C94E00F1F925 /* Supporting Files */,
 			);
 			path = Weather;
@@ -90,6 +101,7 @@
 		D65706F41B49C94E00F1F925 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D65707181B49CB1500F1F925 /* CurrentWeather.plist */,
 				D65706F51B49C94E00F1F925 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -193,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D65706FC1B49C94E00F1F925 /* Main.storyboard in Resources */,
+				D65707191B49CB1500F1F925 /* CurrentWeather.plist in Resources */,
 				D65707011B49C94E00F1F925 /* LaunchScreen.xib in Resources */,
 				D65706FE1B49C94E00F1F925 /* Images.xcassets in Resources */,
 			);
@@ -212,7 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D657071D1B4A160000F1F925 /* NetworkOperation.swift in Sources */,
 				D65706F91B49C94E00F1F925 /* ViewController.swift in Sources */,
+				D657071B1B49CBE000F1F925 /* CurrentWeather.swift in Sources */,
+				D657071F1B4A1E2D00F1F925 /* ForecastService.swift in Sources */,
 				D65706F71B49C94E00F1F925 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
